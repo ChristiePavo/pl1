@@ -34,6 +34,8 @@ Our route in this case requested directions from two places. Before a route can 
 #### **Q) Is there a limit to the number of "stops" in the directions API?** 
 Hint: the answers (yes there are multiple) can be found on the [Usage and Billing](https://developers.google.com/maps/documentation/directions/usage-and-billing) page. 
 
+(CP comment: it depends on the billing code used for the API.  Most expensive is 0.5 cent (US) per direction.)
+
 > _Interested in learning more about Places? You can discover the place id of any location using this tool: https://googlemaps.github.io/js-samples/dist/samples/places-placeid-finder/index.html_
 >
 > _Learn more about place id's at https://developers.google.com/maps/documentation/places/web-service/place-id._
