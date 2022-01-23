@@ -21,6 +21,9 @@
           padding: 0;
         }
     </style>
+    
+    <!-- the following creates a map as in javascript, by specifyin a div HTML element as a map container.
+         HTML nodes are children of the javascript object, using documnet.getElementById()-->
     <script>
       let map;
 
@@ -33,11 +36,12 @@
     </script>
   </head>
   <body>
+    <!--this next line reserves a spot on the web page for the map-->
     <div id="map"></div>
     
     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-    <!-- *** STUDENTS: Replace YOUR_API_KEY text with provided key in class for property src in next line *** -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&v=weekly" async>
+    <!-- *** STUDENTS: Replace YOUR_API_KEY text with provided key in class for property src in next line *** DONE by CP-->
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDv3MGflguusDaLmV_-BUlmuoUI4EbM88w&callback=initMap&v=weekly">
     </script>
   </body>
 </html>
