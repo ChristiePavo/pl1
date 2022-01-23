@@ -22,7 +22,10 @@ First step is to deploy the template into your own account.
 8. Under `Source: Branch`, select `Main`. Leave the other settings as Root
 9. Click `Save` to commit this. 
 
-Now your repository will be accessible under GitHub Pages (an HTML Web Server) at `https://[username].github.io/pl1` where `[username]` is your GitHub account username and the repository name is `pl1`. Note you must type this manually into the URL above, or better yet, modify the ReadMe.md to change [username] to be your actual username! 
+Now your repository will be accessible under GitHub Pages (an HTML Web Server) at `https://[username].github.io/pl1` (now changed to `https://ChristiePavo.github.io/pl1`) where `[username]` is your GitHub account username and the repository name is `pl1`. Note you must type this manually into the URL above, or better yet, modify the ReadMe.md to change [username] to be your actual username of ChristiePavo! 
+
+
+When I did this the message GitHub gave was "Your site is ready to be published at https://christiepavo.github.io/pl1/"
 
 ## Activities to complete
 
