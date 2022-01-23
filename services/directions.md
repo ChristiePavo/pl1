@@ -37,7 +37,9 @@ Hint: the answers (yes there are multiple) can be found on the [Usage and Billin
 (CP comment: it depends on the billing code used for the API.  Most expensive is 0.5 cent (US) per direction.)
 
 > _Interested in learning more about Places? You can discover the place id of any location using this tool: https://googlemaps.github.io/js-samples/dist/samples/places-placeid-finder/index.html_
->
+
+(CP Note: John and Beata's gym, the Canterbury League Club has a place id of:ChIJ6y8cd7a7EmsRF6ahomJRp6A)
+
 > _Learn more about place id's at https://developers.google.com/maps/documentation/places/web-service/place-id._
 
 ### Routes
