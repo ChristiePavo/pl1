@@ -10,8 +10,7 @@ Be creative and use multiple parameters from the API documentation to earn a top
 
 ```
 https://maps.googleapis.com/maps/api/directions/json?origin=-21.136765, -175.190297&destination=place_id:ChIJC3wueFaY9HERmwu4OF-1g9U
-RMGR+8M4&alternative=true&mode=bicycling&units=imperial&waypoints=-21.19219904454107, -175.13026649843147%7Cplace_id:ChIJk0eSB66v9HERhIKxJvGnNSY%7Cplace_id:ChIJg5Fzugiw9HERZYtGhUwdVak
-&key=AIzaSyCM-WWHYHIKY-do4kquMy9Z4wQaQx51AuE
+RMGR+8M4&alternative=true&mode=bicycling&units=imperial&waypoints=optimize:true%7C-21.19219904454107%2C-175.13026649843147%7Cplace_id:ChIJk0eSB66v9HERhIKxJvGnNSY %7Cplace_id:ChIJg5Fzugiw9HERZYtGhUwdVak&key=AIzaSyCM-WWHYHIKY-do4kquMy9Z4wQaQx51AuE
 
 ```
 
