@@ -9,6 +9,8 @@ This html page is associated with the readings at https://developers.google.com/
 
 The simplemap can be opened in GitHub Pages by modifying the url `https://[username].github.io/pl1/services/simplemap.html`. Remember to replace the `[username]` portion with your actual GitHub username. 
 
+(CP edits) correct URL:https://christiepavo.github.io/pl1/services/simplemap.html
+
 Unmodified, opening this page fails with an error `Oops! Something went wrong.` Now Read the console using the F12 tools in your Chrome browser to see the actual error. The following warning should appear:
 ```
 Google Maps JavaScript API warning: InvalidKey https://developers.google.com/maps/documentation/javascript/error-messages#invalid-key
