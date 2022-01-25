@@ -9,7 +9,10 @@ Be creative and use multiple parameters from the API documentation to earn a top
 ## Directions URL
 
 ```
-https://maps.googleapis.com/maps/api/directions/json?origin=47.753046, -53.188408&destination=place_id:ChIJE-YzteglbksR2BO-EDCqDws&alternative=true&mode=bicycling&units=imperial&waypoints=place_id:ChIJI91Q9Puxe0sR6EUAztvjtAI&key=AIzaSyCM-WWHYHIKY-do4kquMy9Z4wQaQx51AuE
+https://maps.googleapis.com/maps/api/directions/json?origin=-21.136765, -175.190297&destination=place_id:ChIJC3wueFaY9HERmwu4OF-1g9U
+RMGR+8M4&alternative=true&mode=bicycling&units=imperial&waypoints=place_id:ChIJPyXVST6l9HERi6ub_P7SMLM
+RV59+4V5%7CChIJk0eSB66v9HERhIKxJvGnNSY%7CChIJg5Fzugiw9HERZYtGhUwdVak
+&key=AIzaSyCM-WWHYHIKY-do4kquMy9Z4wQaQx51AuE
 
 ```
 
