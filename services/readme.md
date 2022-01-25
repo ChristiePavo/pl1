@@ -9,15 +9,15 @@ This html page is associated with the readings at https://developers.google.com/
 
 The simplemap can be opened in GitHub Pages by modifying the url `https://[username].github.io/pl1/services/simplemap.html`. Remember to replace the `[username]` portion with your actual GitHub username. 
 
-(CP edits) correct URL:https://christiepavo.github.io/pl1/services/simplemap.html
-
 Unmodified, opening this page fails with an error `Oops! Something went wrong.` Now Read the console using the F12 tools in your Chrome browser to see the actual error. The following warning should appear:
 ```
 Google Maps JavaScript API warning: InvalidKey https://developers.google.com/maps/documentation/javascript/error-messages#invalid-key
 ```
 To fix this and make the page work modify the provided sample:
 #### [simplemap.html](simplemap.html) - Modify this HTML page for marks
-In this page edit it and change YOUR_API_KEY to be the actual Google API key provided then reload the page. Remember, GitHub Pages can take 2-4 minutes to refresh changes, so be patient! Once this is showing a map be sure you complete all activities outlined in the D2L checklist for this item. . 
+In this page edit it and change YOUR_API_KEY to be the actual Google API key provided then reload the page. Remember, GitHub Pages can take 2-4 minutes to refresh changes, so be patient! Once this is showing a map be sure you complete all activities outlined in the D2L checklist for this item.
+
+(CP edits to zoom in on Skybury Coffee Plantation in Queensland) correct URL:https://christiepavo.github.io/pl1/services/simplemap.html
 
 
 ## ![routes](https://mapsplatform.google.com/static/images/icons/header/NAV_Products_Supernav_Icon_02-Routes.svg) 2. Routes - Directions API - URL request JSON response
