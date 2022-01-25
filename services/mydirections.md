@@ -9,7 +9,8 @@ Be creative and use multiple parameters from the API documentation to earn a top
 ## Directions URL
 
 ```
-https://YourDirectionsApiURLGoesHere
+https://maps.googleapis.com/maps/api/directions/json?origin=47.753046, -53.188408&destination=place_id:ChIJE-YzteglbksR2BO-EDCqDws&key=AIzaSyCM-WWHYHIKY-do4kquMy9Z4wQaQx51AuE
+
 ```
 
 ## Next paste the full JSON response to this query here:
