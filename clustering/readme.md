@@ -10,6 +10,8 @@ The code has been adapted into a single page combining the HTML, CSS and JavaScr
 
 This webpage is accessible on GitHub Pages web server using the URL `https://[username].github.io/pl1/clustering/ontarioparks.html` where `[username]` is replaced with your GitHub account username. 
 
+(CP edit: corrected URL is) https://christiepavo.github.io/pl1/clustering/ontarioparks.html
+
 Using this as the base, first get the example working by adding the provided Google Maps API Key into the line calling the google maps library. Next, review how the example works. Compare this example to the previous activity [simplemap.html](../services/simplemap.html).
 
 In this example, there are points spread out through Australia and New Zealand. The points are inserted into the `<SCRIPT>` section as a [JavaScript Array](https://www.w3schools.com/js/js_arrays.asp) where each element is an Object that contains a `lat` and `lng` value. 
