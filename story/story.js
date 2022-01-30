@@ -10,11 +10,11 @@ function initMap() {
     center: myLatlng,
     mapTypeID: "hybrid",
   });
-  //const marker = new google.maps.Marker({
-  //  position: myLatlng,
-  //  map,
-  //  title: "Click to zoom",
-  //});
+  const marker = new google.maps.Marker({
+    position: myLatlng,
+    map,
+    title: "Click to zoom",
+  });
   
   marker.addListener("click", () => {
     map.setZoom(14);
@@ -49,7 +49,6 @@ function initMap() {
   dogWalkPath.setMap(map);
   
   setdogMarkers(map);
-}
      
 // Data for the dog markers consisting of a name, a LatLng and a zIndex for the
 // order in which these markers should display on top of each other.
@@ -99,4 +98,5 @@ for (let i = 0; i < dogspots.length; i++) {
       zIndex: spot[3],
     });
   }
+}
  
