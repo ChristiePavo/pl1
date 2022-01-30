@@ -95,5 +95,4 @@ for (let i = 0; i < dogspots.length; i++) {
       zIndex: spot[3],
     });
   }
-}
  
