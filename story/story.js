@@ -1,5 +1,6 @@
 // Javascript templated from 
 // https://developers.google.com/maps/documentation/javascript/examples/event-simple#maps_event_simple-javascript
+// https://developers.google.com/maps/documentation/javascript/examples/icon-simple
 // https://developers.google.com/maps/documentation/javascript/examples/polyline-simple
 // modified for my week 3 lab demo
 function initMap() {
@@ -8,12 +9,16 @@ function initMap() {
     zoom: 12,
     center: myLatlng ,
   });
-  const marker = new google.maps.Marker({
+  // adds a marker of a golder retriver to the Forest Centre
+  // image taken from creative commons site https://www.pngall.com/golden-retrievers-png/download/39136
+  const image ="images/retrieversm.png";
+  const dogMarker = new google.maps.Marker({
     position: myLatlng,
     map,
+    icon: image,
     title: "Click to zoom",
   });
-  map.addListener("center_changed", () => {
+    map.addListener("center_changed", () => {
     // 3 seconds after the center of the map has changed, pan back to the
     // marker.
     window.setTimeout(() => {
@@ -24,15 +29,7 @@ function initMap() {
     map.setZoom(15);
     map.setCenter(marker.getPosition());
   });
-  // adds a marker of a golder retriver to the Forest Centre
-  // image taken from creative commons site https://www.pngall.com/golden-retrievers-png/download/39136
-  const image =
-    "images/retrieversm.png";
-  const dogMarker = new google.maps.Marker({
-    position: { lat: 44.07, lng: -78.5 },
-    map,
-    icon: image,
-  });
+  
   // adding simple polyline to show Piper's favourite walk
   const dogWalkCoordinates = [
     {lat: 44.05702684784443, lng:-78.48639804016226},
