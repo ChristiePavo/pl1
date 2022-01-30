@@ -25,7 +25,7 @@ function initMap() {
   // adds a marker of a golder retriver to the Forest Centre
   // image taken from creative commons site https://www.pngall.com/golden-retrievers-png/download/39136
   const image =
-    "images/retriever.png";
+    "images/retrieversm.png";
   const dogMarker = new google.maps.Marker({
     position: { lat: 44.1, lng: -78.6 },
     map,
