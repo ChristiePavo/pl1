@@ -49,16 +49,16 @@ function initMap() {
      
 // Data for the dog markers consisting of a name, a LatLng and a zIndex for the
 // order in which these markers should display on top of each other.
-//const dogspots = [
-//  ["deer crossing", 44.058461224255396, -78.4803871031043, 1],
-//  ["chance for tennis ball", 44.06182996685024, -78.48169558980015, 2],
-//  ["squirrel haven", 44.070573494998946, -78.48604451309998, 3],
-//  ["George gives treats", 44.073677666147496, -78.50357598960898, 4],
-//  ["Nasty dog to avoid", 44.06167086036685, -78.5002585261826, 5],
-//  ["Other Piper to visit", 44.06056979459591, -78.49244097079963, 6],
-//];
+const dogspots = [
+  ["deer crossing", 44.058461224255396, -78.4803871031043, 1],
+  ["chance for tennis ball", 44.06182996685024, -78.48169558980015, 2],
+  ["squirrel haven", 44.070573494998946, -78.48604451309998, 3],
+  ["George gives treats", 44.073677666147496, -78.50357598960898, 4],
+  ["Nasty dog to avoid", 44.06167086036685, -78.5002585261826, 5],
+  ["Other Piper to visit", 44.06056979459591, -78.49244097079963, 6],
+];
 
-//function setdogMarkers(map) {
+function setdogMarkers(map) {
   // Adds dog markers to the map.
   // Marker sizes are expressed as a Size of X,Y where the origin of the image
   // (0,0) is located in the top left of the image.
@@ -66,14 +66,15 @@ function initMap() {
   // direction to the right and in the Y direction down.  
   // adds a marker of a golder retriver 
   // image taken from creative commons site https://www.pngall.com/golden-retrievers-png/download/39136
- // const image ="images/retrieversm.png";
+const image = {
+   "images/retrieversm.png",
   // This marker is 40 pixels wide by 34 pixels high
-//  size: new google.maps.Size(40, 34),
+  size: new google.maps.Size(40, 34),
     // The origin for this image is (0, 0).
  //   origin: new google.maps.Point(0, 0),
     // The anchor for this image is (0, 34).
-//    anchor: new google.maps.Point(0, 34),
-//  };
+ //   anchor: new google.maps.Point(0, 34),
+  };
   // Shapes define the clickable region of the icon. The type defines an HTML
   // <area> element 'poly' which traces out a polygon as a series of X,Y points.
   // The final coordinate closes the poly by connecting to the first coordinate.
@@ -82,17 +83,17 @@ function initMap() {
 //    type: "poly",
 //  };
 
-//  for (let i = 0; i < dogspots.length; i++) {
-//    const spot = dogspots[i];
+for (let i = 0; i < dogspots.length; i++) {
+    const spot = dogspots[i];
 
- //   new google.maps.Marker({
- //    position: { lat: spot[1], lng: spot[2] },
- //     map,
- //     icon: image,
+    new google.maps.Marker({
+     position: { lat: spot[1], lng: spot[2] },
+      map,
+      icon: image,
  //     shape: shape,
- //     title: spot[0],
- //     zIndex: spot[3],
- //   });
-//  }
-  
+      title: spot[0],
+      zIndex: spot[3],
+    });
+  }
+}
  
