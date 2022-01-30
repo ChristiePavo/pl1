@@ -8,16 +8,19 @@ function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 12,
     center: myLatlng,
+    mapTypeID: "hybrid",
   });
   const marker = new google.maps.Marker({
     position: myLatlng,
     map,
     title: "Click to zoom",
   });
+  
   marker.addListener("click", () => {
     map.setZoom(14);
     map.setCenter(marker.getPosition());
   });
+  
   // adding simple polyline to show Piper's favourite walk
   const dogWalkCoordinates = [
     {lat: 44.05702684784443, lng:-78.48639804016226},
@@ -42,6 +45,7 @@ function initMap() {
     strokeOpacity: 1.0,
     strokeWeight: 2,
   });
+  
   dogWalkPath.setMap(map);
   
   setdogMarkers(map);
@@ -71,7 +75,7 @@ const image = {
   // This marker is 40 pixels wide by 34 pixels high
   size: new google.maps.Size(40, 34),
     // The origin for this image is (0, 0).
- //   origin: new google.maps.Point(0, 0),
+    origin: new google.maps.Point(0, 0),
     // The anchor for this image is (0, 34).
  //   anchor: new google.maps.Point(0, 34),
   };
