@@ -10,11 +10,11 @@ function initMap() {
     center: myLatlng,
     mapTypeID: "hybrid",
   });
-  const marker = new google.maps.Marker({
-    position: myLatlng,
-    map,
-    title: "Click to zoom",
-  });
+  //const marker = new google.maps.Marker({
+  //  position: myLatlng,
+  //  map,
+  //  title: "Click to zoom",
+  //});
   
   marker.addListener("click", () => {
     map.setZoom(14);
