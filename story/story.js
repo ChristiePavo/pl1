@@ -92,8 +92,4 @@ function setdogMarkers(map) {
     });
   }
   
-  
-  
-}
-  
  
