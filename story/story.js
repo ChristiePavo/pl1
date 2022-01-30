@@ -1,7 +1,7 @@
 // Javascript template from https://developers.google.com/maps/documentation/javascript/examples/event-simple#maps_event_simple-javascript
 // modified for my week 3 lab demo
 function initMap() {
-  const myLatlng = { lat: 44.07588714149805, lng: -78.5025782239259 };
+  const myLatlng = { lat: 44.063271493131865, lng: -78.50079749804347};
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 12,
     center: myLatlng ,
