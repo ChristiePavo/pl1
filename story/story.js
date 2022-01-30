@@ -8,20 +8,20 @@ function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 12,
     center: myLatlng,
-    mapTypeID: "hybrid",
+//    mapTypeID: "hybrid",
   });
-  const image = {
-   "images/retrieversm.png";
-  const dogmarker = new google.maps.Marker({
+//  const image = {
+//   "images/retrieversm.png";
+  const marker = new google.maps.Marker({
     position: myLatlng,
     map,
-    icon: image,
+//    icon: image,
     title: "Click to zoom",
   });
   
-  dogmarker.addListener("click", () => {
+  marker.addListener("click", () => {
     map.setZoom(14);
-    map.setCenter(dogmarker.getPosition());
+    map.setCenter(marker.getPosition());
   });
   
   // adding simple polyline to show Piper's favourite walk
@@ -51,4 +51,3 @@ function initMap() {
   
   dogWalkPath.setMap(map);
 }
- 
