@@ -14,7 +14,17 @@ function initMap() {
     map,
     title: "Click to zoom",
   });
-  
+  map.addListener("center_changed", () => {
+    // 3 seconds after the center of the map has changed, pan back to the
+    // marker.
+    window.setTimeout(() => {
+      map.panTo(marker.getPosition());
+    }, 3000);
+  });
+  marker.addListener("click", () => {
+    map.setZoom(14);
+    map.setCenter(marker.getPosition());
+  });
   // adding simple polyline to show Piper's favourite walk
   const dogWalkCoordinates = [
     {lat: 44.05702684784443, lng:-78.48639804016226},
