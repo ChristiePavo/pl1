@@ -15,19 +15,19 @@ function initMap() {
   const dogMarker = new google.maps.Marker({
     position: myLatlng,
     map,
-    icon: image,
     title: "Click to zoom",
-  });
+    icon: image,
+   });
     map.addListener("center_changed", () => {
     // 3 seconds after the center of the map has changed, pan back to the
     // marker.
     window.setTimeout(() => {
-      map.panTo(marker.getPosition());
+      map.panTo(dogMarker.getPosition());
     }, 3000);
   });
-  marker.addListener("click", () => {
+  dogMarker.addListener("click", () => {
     map.setZoom(15);
-    map.setCenter(marker.getPosition());
+    map.setCenter(dogMarker.getPosition());
   });
   
   // adding simple polyline to show Piper's favourite walk
