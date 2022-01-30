@@ -19,8 +19,16 @@ function initMap() {
     }, 3000);
   });
   marker.addListener("click", () => {
-    map.setZoom(14);
+    map.setZoom(15);
     map.setCenter(marker.getPosition());
+  });
+  // adds a marker of a golder retriver to the Forest Centre
+  const image =
+    "images/retriever.png";
+  const dogMarker = new google.maps.Marker({
+    position: { lat: 44.1, lng: -78.6 },
+    map,
+    icon: image,
   });
 }
   
