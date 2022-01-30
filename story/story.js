@@ -1,8 +1,31 @@
+// Javascript template from https://developers.google.com/maps/documentation/javascript/examples/event-simple#maps_event_simple-javascript
+// modified for my week 3 lab demo
 function initMap() {
+  const myLatlng = { lat: 44.07588714149805, lng: -78.5025782239259 };
   const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 3,
-    center: { lat: 45, lng: -80 },
+    zoom: 14,
+    center: myLatlng ,
   });
+  const marker = new google.maps.Marker({
+    position: myLatlng,
+    map,
+    title: "Click to zoom",
+  });
+  map.addListener("center_changed", () => {
+    // 3 seconds after the center of the map has changed, pan back to the
+    // marker.
+    window.setTimeout(() => {
+      map.panTo(marker.getPosition());
+    }, 3000);
+  });
+  marker.addListener("click", () => {
+    map.setZoom(8);
+    map.setCenter(marker.getPosition());
+  });
+}
+  
+  
+  
   // Create an array of alphabetical characters used to label the markers.
   const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   // Add some markers to the map.
