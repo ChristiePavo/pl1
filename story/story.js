@@ -27,7 +27,7 @@ function initMap() {
   const image =
     "images/retrieversm.png";
   const dogMarker = new google.maps.Marker({
-    position: { lat: 44.1, lng: -78.6 },
+    position: { lat: 44.07, lng: -78.5 },
     map,
     icon: image,
   });
