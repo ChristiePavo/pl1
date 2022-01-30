@@ -10,15 +10,18 @@ function initMap() {
     center: myLatlng,
     mapTypeID: "hybrid",
   });
-  const marker = new google.maps.Marker({
+  const image = {
+   "images/retrieversm.png";
+  const dogmarker = new google.maps.Marker({
     position: myLatlng,
     map,
+    icon: image,
     title: "Click to zoom",
   });
   
-  marker.addListener("click", () => {
+  dogmarker.addListener("click", () => {
     map.setZoom(14);
-    map.setCenter(marker.getPosition());
+    map.setCenter(dogmarker.getPosition());
   });
   
   // adding simple polyline to show Piper's favourite walk
@@ -63,16 +66,19 @@ const dogspots = [
 
 function setdogMarkers(map) {
   // Adds dog markers to the map.
+  
   // Marker sizes are expressed as a Size of X,Y where the origin of the image
   // (0,0) is located in the top left of the image.
+  
   // Origins, anchor positions and coordinates of the marker increase in the X
-  // direction to the right and in the Y direction down.  
+  // direction to the right and in the Y direction down. 
+  
   // adds a marker of a golder retriver 
   // image taken from creative commons site https://www.pngall.com/golden-retrievers-png/download/39136
-const image = {
-   "images/retrieversm.png",
+   const image = {
+     "images/retrieversm.png",
   // This marker is 40 pixels wide by 34 pixels high
-  size: new google.maps.Size(40, 34),
+    size: new google.maps.Size(40, 34),
     // The origin for this image is (0, 0).
     origin: new google.maps.Point(0, 0),
     // The anchor for this image is (0, 34).
