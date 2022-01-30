@@ -18,22 +18,21 @@ function initMap() {
     title: "Click to zoom",
     icon: image,
    });
-    map.addListener("center_changed", () => {
+    //map.addListener("center_changed", () => {
     // 3 seconds after the center of the map has changed, pan back to the
     // marker.
-    window.setTimeout(() => {
-      map.panTo(dogMarker.getPosition());
-    }, 3000);
-  });
-  dogMarker.addListener("click", () => {
-    map.setZoom(15);
-    map.setCenter(dogMarker.getPosition());
-  });
+    //window.setTimeout(() => {
+    //  map.panTo(dogMarker.getPosition());
+   // }, 3000);
+  //});
+  //dogMarker.addListener("click", () => {
+  //  map.setZoom(15);
+  //  map.setCenter(dogMarker.getPosition());
+ // });
   
   // adding simple polyline to show Piper's favourite walk
   const dogWalkCoordinates = [
     {lat: 44.05702684784443, lng:-78.48639804016226},
-    {lat: 44.05660504572014, lng: -78.48854222874915},
     {lat: 44.05855275335276, lng: -78.47995972665657},
     {lat: 44.07599811000987, lng: -78.48882454796582},
     {lat: 44.072468883017926, lng: -78.5046908840712},
