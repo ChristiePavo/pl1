@@ -5,19 +5,15 @@
 // https://developers.google.com/maps/documentation/javascript/examples/polyline-simple
 // modified for my week 3 lab demo
 function initMap() {
-  const myLatlng = { lat: 44.063271493131865, lng: -78.50079749804347};
+  var myLatlng = { lat: 44.063271493131865, lng: -78.50079749804347};
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 12,
     center: myLatlng,
   });
-  // adds a marker of a golder retriver 
-  // image taken from creative commons site https://www.pngall.com/golden-retrievers-png/download/39136
-  const image = 
-   "images/retrieversm.png";
-  const marker = new google.maps.Marker({
+  
+  var marker= new google.maps.Marker({
     position: myLatlng,
     map,
-    icon: image,
     title: "Click to zoom",
   });
   
@@ -53,49 +49,57 @@ function initMap() {
   });
   
   dogWalkPath.setMap(map);
-  setdogMarkers(map);
-}
+  // setdogMarkers(map);
 
-  // Data for the dog markers consisting of a name, a LatLng and a zIndex for the
-  // order in which these markers should display on top of each other.
-  const dogspots = [
-    ["deer crossing", 44.058461224255396, -78.4803871031043, 1],
-    ["chance for tennis ball", 44.06182996685024, -78.48169558980015, 2],
-    ["squirrel haven", 44.070573494998946, -78.48604451309998, 3],
-    ["George gives treats", 44.073677666147496, -78.50357598960898, 4],
-    ["Nasty dog to avoid", 44.06167086036685, -78.5002585261826, 5],
-    ["Other Piper to visit", 44.06056979459591, -78.49244097079963, 6],
-  ];
-
-function setdogMarkers(map) {
-// Adds dog markers to the map.
-  const image = {
-    "images/retrieversm.png",
- // This marker is 40 pixels wide by 34 pixels high
-   size: new google.maps.Size(40, 34),
-   // The origin for this image is (0, 0).
-   origin: new google.maps.Point(0, 0),
-   // The anchor for this image is (0, 34).
-   anchor: new google.maps.Point(0, 34),
- };
-  // Shapes define the clickable region of the icon. The type defines an HTML
-  // <area> element 'poly' which traces out a polygon as a series of X,Y points.
-  // The final coordinate closes the poly by connecting to the first coordinate.
-  const shape = {
-    coords: [1, 1, 1, 20, 18, 20, 18, 1],
-    type: "poly",
-  };
-  
- for (let i = 0; i < dogspots.length; i++) {
-  const spot = dogspots[i];
-
-  new google.maps.Marker({
-   position: { lat: spot[1], lng: spot[2] },
+  // adds a marker of a golder retriver 
+  // image taken from creative commons site https://www.pngall.com/golden-retrievers-png/download/39136
+  const image = 
+   "images/retrieversm.png";
+   var myLatlng1 = { lat: 44.058461224255396, lng: -78.4803871031043}; 
+   var marker = new google.maps.Marker({
+    position: myLatlng1,
     map,
     icon: image,
-//     shape: shape,
-    title: spot[0],
-    zIndex: spot[3],
+    title: "deer crossing",
   });
-}
+  var myLatlng2 = { lat: 44.06182996685024, lng: -78.48169558980015}; 
+   var marker = new google.maps.Marker({
+    position: myLatlng2,
+    map,
+    icon: image,
+    title: "chance for tennis ball",
+  });
+
+  var myLatlng3 = { lat: 44.067349, lng: -78.484474}; 
+  var marker = new google.maps.Marker({
+   position: myLatlng3,
+   map,
+   icon: image,
+   title: "squirrel haven",
+ });
+
+ var myLatlng4 = { lat: 44.073677666147496, lng: -78.50357598960898}; 
+  var marker = new google.maps.Marker({
+   position: myLatlng4,
+   map,
+   icon: image,
+   title: "George gives treats",
+ });
+
+ var myLatlng5 = { lat: 44.05903351017362, lng: -78.49902100027727}; 
+  var marker = new google.maps.Marker({
+   position: myLatlng5,
+   map,
+   icon: image,
+   title: "Nasty dog to avoid",
+ });
+
+ var myLatlng6 = { lat: 44.06056979459591, lng: -78.49244097079963}; 
+  var marker = new google.maps.Marker({
+   position: myLatlng6,
+   map,
+   icon: image,
+   title: "Other Piper to visit",
+ });
+  
 }
