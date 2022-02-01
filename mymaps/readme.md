@@ -10,3 +10,6 @@ Be sure to Share and embed your map into a custom webpage. A starter page is ava
 _Issues with embedding it using an iframe? Be sure you're using the "embed" link._ See an example of the problem and the solution here: https://shawnmflemingc.github.io/geom99/mymapsiframe.html
 
 **_Note:_ Your URL of this activity will be submitted during your next Practical Lab**
+
+(CP added) URL is https://www.google.com/maps/d/u/0/edit?mid=1az6GLHHNY7xSGh0OvcJ9K1ZVi6yvTV9f&usp=sharing
+
