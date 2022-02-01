@@ -52,7 +52,7 @@ function initMap() {
   // setdogMarkers(map);
 
   // adds a marker of a golder retriver 
-  // image taken from creative commons site https://www.pngall.com/golden-retrievers-png/download/39136
+  // image taken https://www.flaticon.com/premium-icon/dog_2053574?term=dog&page=1&position=22&page=1&position=22&related_id=2053574&origin=tag
   const image = 
    "images/retrieversm.png";
    var myLatlng1 = { lat: 44.058461224255396, lng: -78.4803871031043}; 
