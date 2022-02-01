@@ -5,19 +5,15 @@
 // https://developers.google.com/maps/documentation/javascript/examples/polyline-simple
 // modified for my week 3 lab demo
 function initMap() {
-  const myLatlng = { lat: 44.063271493131865, lng: -78.50079749804347};
+  var myLatlng = { lat: 44.063271493131865, lng: -78.50079749804347};
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 12,
     center: myLatlng,
   });
-  // adds a marker of a golder retriver 
-  // image taken from creative commons site https://www.pngall.com/golden-retrievers-png/download/39136
-  const image = 
-   "images/retrieversm.png";
-  const marker = new google.maps.Marker({
+  
+  var marker= new google.maps.Marker({
     position: myLatlng,
     map,
-    icon: image,
     title: "Click to zoom",
   });
   
@@ -53,5 +49,57 @@ function initMap() {
   });
   
   dogWalkPath.setMap(map);
-  }
+  // setdogMarkers(map);
 
+  // adds a marker of a golder retriver 
+  // image taken from creative commons site https://www.pngall.com/golden-retrievers-png/download/39136
+  const image = 
+   "images/retrieversm.png";
+   var myLatlng1 = { lat: 44.058461224255396, lng: -78.4803871031043}; 
+   var marker = new google.maps.Marker({
+    position: myLatlng1,
+    map,
+    icon: image,
+    title: "deer crossing",
+  });
+  var myLatlng2 = { lat: 44.06182996685024, lng: -78.48169558980015}; 
+   var marker = new google.maps.Marker({
+    position: myLatlng2,
+    map,
+    icon: image,
+    title: "chance for tennis ball",
+  });
+
+  var myLatlng3 = { lat: 44.067349, lng: -78.484474}; 
+  var marker = new google.maps.Marker({
+   position: myLatlng3,
+   map,
+   icon: image,
+   title: "squirrel haven",
+ });
+
+ var myLatlng4 = { lat: 44.073677666147496, lng: -78.50357598960898}; 
+  var marker = new google.maps.Marker({
+   position: myLatlng4,
+   map,
+   icon: image,
+   title: "George gives treats",
+ });
+
+ var myLatlng5 = { lat: 44.05903351017362, lng: -78.49902100027727}; 
+  var marker = new google.maps.Marker({
+   position: myLatlng5,
+   map,
+   icon: image,
+   title: "Nasty dog to avoid",
+ });
+
+ var myLatlng6 = { lat: 44.06056979459591, lng: -78.49244097079963}; 
+  var marker = new google.maps.Marker({
+   position: myLatlng6,
+   map,
+   icon: image,
+   title: "Other Piper to visit",
+ });
+  
+}
