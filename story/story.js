@@ -1,5 +1,6 @@
 // Javascript templated from 
 // https://developers.google.com/maps/documentation/javascript/examples/event-simple#maps_event_simple-javascript
+// https://developers.google.com/maps/documentation/javascript/examples/event-simple
 // https://developers.google.com/maps/documentation/javascript/examples/icon-simple
 // https://developers.google.com/maps/documentation/javascript/examples/polyline-simple
 // modified for my week 3 lab demo
@@ -8,14 +9,15 @@ function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 12,
     center: myLatlng,
-    mapTypeID: "hybrid",
   });
-//  const image = {
-//   "images/retrieversm.png";
+  // adds a marker of a golder retriver 
+  // image taken from creative commons site https://www.pngall.com/golden-retrievers-png/download/39136
+  const image = 
+   "images/retrieversm.png";
   const marker = new google.maps.Marker({
     position: myLatlng,
     map,
-//    icon: image,
+    icon: image,
     title: "Click to zoom",
   });
   
@@ -23,6 +25,7 @@ function initMap() {
     map.setZoom(14);
     map.setCenter(marker.getPosition());
   });
+  
   
   // adding simple polyline to show Piper's favourite walk
   const dogWalkCoordinates = [
@@ -50,4 +53,5 @@ function initMap() {
   });
   
   dogWalkPath.setMap(map);
-}
+  }
+
